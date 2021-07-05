@@ -6,7 +6,7 @@ import Users from '../users/Users';
 const Home = ({
   searchUsers,
   clearUsers,
-  setAlert,
+  showAlert,
   users,
   loading,
 }) => {
@@ -16,7 +16,7 @@ const Home = ({
         searchUsers={searchUsers}
         clearUsers={clearUsers}
         showClearBtn={users.length > 0}
-        setAlert={setAlert}
+        showAlert={showAlert}
       />
       <Users users={users} loading={loading} />
     </Fragment>
@@ -26,7 +26,7 @@ const Home = ({
 Home.propTypes = {
   searchUsers: PropTypes.func.isRequired,
   clearUsers: PropTypes.func.isRequired,
-  setAlert: PropTypes.func.isRequired,
+  showAlert: PropTypes.func.isRequired,
   users: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired,
 };

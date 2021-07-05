@@ -31,7 +31,8 @@ const User = ({
   useEffect(() => {
     getUser(username);
     getUserRepos(username);
-  }, [getUser, getUserRepos, username]);
+    //eslint-disable-next-line
+  }, []);
   
   return (
   loading ? 
