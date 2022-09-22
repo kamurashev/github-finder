@@ -12,18 +12,12 @@ const Users = () => {
   return loading ? (
     <Spinner />
   ) : (
-    <div style={usersStyle}>
+    <div className = 'users'>
       {users.map((user) => (
         <UserItem key={user.id} user={user} />
       ))}
     </div>
   );
-};
-
-const usersStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gap: '1rem',
 };
 
 export default Users;

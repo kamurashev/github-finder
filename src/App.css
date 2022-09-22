@@ -376,6 +376,12 @@ table th {
   margin-right: 0.6rem;
 }
 
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;	
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
@@ -410,5 +416,9 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+
+  .users {
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
